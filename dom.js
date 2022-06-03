@@ -23,13 +23,18 @@ var header = document.getElementById('main-header');
 // headerTitle.innerHTML = '<h3>Hello</h3>';
 
 //header.style.borderBottom = 'solid 3px #000'
+ var items = document.getElementsByClassName('list-group-item');
 
-// var items = document.getElementsByClassName('list-group-item');
-
-// console.log(items[1]);
+console.log(items[1]);
 //items[1].textContent = 'Hello 2';
+items[2].style.color = 'green';
 
 var additems = document.getElementsByClassName('title');
 //console.log(additems);
 // additems[0].textContent = 'DaaloIdhar'
 additems[0].style.fontWeight = 'bold';
+additems[0].style.color = 'green';
+
+for(let i =0; i<items.length; i++){
+    items[i].style.fontWeight = 'bold';
+}
