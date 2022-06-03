@@ -59,24 +59,38 @@ var header = document.getElementById('main-header');
 
 // Query Selector//
 
-var header = document.querySelector('#main-header');
-header.style.borderBottom = 'solid 4px #ccc';
+// var header = document.querySelector('#main-header');
+// header.style.borderBottom = 'solid 4px #ccc';
 
-var input = document.querySelector('input');
-input.value = 'Hello World';
+// var input = document.querySelector('input');
+// input.value = 'Hello World';
 
-var submit = document.querySelector('input[type="submit"]');
-submit.value = "SEND";
+// var submit = document.querySelector('input[type="submit"]');
+// submit.value = "SEND";
 
-var item = document.querySelector('.list-group-item');
-item.style.color = 'red';
+// var item = document.querySelector('.list-group-item');
+// item.style.color = 'red';
 
-var lastItem = document.querySelector('.list-group-item:last-child');
-lastItem.style.color = 'blue';
+// var lastItem = document.querySelector('.list-group-item:last-child');
+// lastItem.style.color = 'blue';
 
-var secondItem = document.querySelector('.list-group-item:nth-child(2)');
-secondItem.style.backgroundColor = 'green';
+// var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+// secondItem.style.backgroundColor = 'green';
 
-var thirdItem = document.querySelector('.list-group-item:nth-child(3)');
-thirdItem.style.color = 'white';
+// var thirdItem = document.querySelector('.list-group-item:nth-child(3)');
+// thirdItem.style.color = 'white';
 
+//querySelectorAll
+var titles = document.querySelectorAll('.title');
+
+console.log(titles);
+titles[0].textContent = 'Hello';
+var Items = document.querySelectorAll('.list-group-item');
+Items[1].style.backgroundColor = 'green';
+var odd = document.querySelectorAll('li:nth-child(odd)');
+var even = document.querySelectorAll('li:nth-child(even)');
+
+for(var i = 0; i < odd.length; i++){
+    odd[i].style.backgroundColor = 'green';
+    even[i].style.backgroundColor = '#ccc';
+}
